@@ -1,7 +1,6 @@
 <?php
 
 require_once $pathGeneralMethods;
-require_once $pathResponse;
 require_once $pathCredentials;
 require_once $pathSites;
 require_once $pathSettings;

@@ -33,7 +33,7 @@ function selectCustomers($customerId, $pageNumber = 1, $pageSize = 5)
         WHERE isDeleted = 0
         AND customerId = IFNULL($customerId, customerId)";
 
-    echo $sql;
+    // echo $sql;
     $mysqli = dbContext();
     $result = $mysqli->query($sql);
     $resultCount = $mysqli->query($sqlCount);

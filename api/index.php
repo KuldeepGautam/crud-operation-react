@@ -17,8 +17,7 @@ require_once __DIR__ . '/common/paths.php';
 require_once $pathUrlParams;
 require_once $pathCustomersController;
 require_once $pathCustomers;
-
-
+require_once $pathResponse;
 
 // frombody post request data
 // checking for the format of json object
