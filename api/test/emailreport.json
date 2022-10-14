@@ -1,0 +1,1142 @@
+[
+  {
+    "userId": "28",
+    "customerId": "7",
+    "name": "Hemchand Yadav",
+    "emailTo": "planningrewari2@gmail.com",
+    "emailCC": "it.support@sysinfra.in",
+    "sites": [
+      {
+        "siteRid": "26",
+        "siteId": "REWPREW002",
+        "siteName": "Uttam Nagar",
+        "serverTimestamp": "2020-09-25 19:00:08"
+      }
+    ]
+  },
+  {
+    "userId": "101",
+    "customerId": "27",
+    "name": "Prashant Jhadav",
+    "emailTo": "agm1.cmnwo.kyn@gmail.com",
+    "emailCC": "it.support@sysinfra.in",
+    "sites": [
+      {
+        "siteRid": "181",
+        "siteId": "BSNLKAL013",
+        "siteName": "KHARDI, Maharashtra, Pin-421601",
+        "serverTimestamp": "2022-03-05 04:22:56"
+      }
+    ]
+  },
+  {
+    "userId": "105",
+    "customerId": "25",
+    "name": "Rinku Kumar",
+    "emailTo": "sujeet.sinha@spaceworld.in",
+    "emailCC": "harvinder.kumar@spaceworld.in,amit.chawla@spaceworld.in,priyanka@spaceworld.in,it.support@sysinfra.in,girish.jha@sysinfra.in",
+    "sites": [
+      {
+        "siteRid": "229",
+        "siteId": "UPSHQGNDFL",
+        "siteName": "SPACE WORLD OFFICE",
+        "serverTimestamp": "2022-08-23 18:30:32"
+      },
+      {
+        "siteRid": "204",
+        "siteId": "STIPLUPE10",
+        "siteName": "Hazratganj LMRC",
+        "serverTimestamp": "2022-08-25 04:56:32"
+      },
+      {
+        "siteRid": "198",
+        "siteId": "STIPLUPE09",
+        "siteName": "Sachivalaya LMRC",
+        "serverTimestamp": "2022-08-25 04:58:47"
+      },
+      {
+        "siteRid": "197",
+        "siteId": "STIPLUPE08",
+        "siteName": "Hussainganj LMRC",
+        "serverTimestamp": "2022-08-25 04:59:38"
+      },
+      {
+        "siteRid": "196",
+        "siteId": "STIPLUPE07",
+        "siteName": "CSS Airport(LMRC)",
+        "serverTimestamp": "2022-08-06 12:28:02"
+      },
+      {
+        "siteRid": "135",
+        "siteId": "STIPLTN308",
+        "siteName": "Thondiarpet Metro Station",
+        "serverTimestamp": "2022-08-25 04:58:23"
+      },
+      {
+        "siteRid": "134",
+        "siteId": "STIPLTN307",
+        "siteName": "Thiygaraja Collage Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:14"
+      },
+      {
+        "siteRid": "220",
+        "siteId": "STIPLTN026",
+        "siteName": "St Thomas Mount Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:20"
+      },
+      {
+        "siteRid": "144",
+        "siteId": "STIPLTN025",
+        "siteName": "Ashok Nagar Metro Station",
+        "serverTimestamp": "2022-08-25 04:59:42"
+      },
+      {
+        "siteRid": "124",
+        "siteId": "STIPLTN024",
+        "siteName": "Thirumangalam  Metro Station",
+        "serverTimestamp": "2022-08-25 04:58:25"
+      },
+      {
+        "siteRid": "129",
+        "siteId": "STIPLTN023",
+        "siteName": "Anna Nagar Tower Metro Station",
+        "serverTimestamp": "2022-08-25 04:59:02"
+      },
+      {
+        "siteRid": "128",
+        "siteId": "STIPLTN022",
+        "siteName": "Anna Nagar East Metro Station",
+        "serverTimestamp": "2022-08-25 04:56:58"
+      },
+      {
+        "siteRid": "127",
+        "siteId": "STIPLTN021",
+        "siteName": "Shenoy Nagar Metro Station",
+        "serverTimestamp": "2022-08-24 11:49:40"
+      },
+      {
+        "siteRid": "150",
+        "siteId": "STIPLTN020",
+        "siteName": "Pachaiyappa College Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:29"
+      },
+      {
+        "siteRid": "126",
+        "siteId": "STIPLTN019",
+        "siteName": "Kilpauk Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:42"
+      },
+      {
+        "siteRid": "125",
+        "siteId": "STIPLTN018",
+        "siteName": "Nehru Park Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:04"
+      },
+      {
+        "siteRid": "130",
+        "siteId": "STIPLTN017",
+        "siteName": "Egmore Metro Station",
+        "serverTimestamp": "2022-08-25 04:59:13"
+      },
+      {
+        "siteRid": "147",
+        "siteId": "STIPLTN016",
+        "siteName": "Airport Metro Station",
+        "serverTimestamp": "2022-08-10 16:42:54"
+      },
+      {
+        "siteRid": "146",
+        "siteId": "STIPLTN015",
+        "siteName": "Mennambkkam Metro Station",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "145",
+        "siteId": "STIPLTN014",
+        "siteName": "Naganallur Metro Station",
+        "serverTimestamp": "2022-08-25 04:59:31"
+      },
+      {
+        "siteRid": "148",
+        "siteId": "STIPLTN013",
+        "siteName": "Guindy Metro Station",
+        "serverTimestamp": "2022-08-25 04:56:41"
+      },
+      {
+        "siteRid": "149",
+        "siteId": "STIPLTN012",
+        "siteName": "Little Mount Metro Station",
+        "serverTimestamp": "2022-08-05 08:30:22"
+      },
+      {
+        "siteRid": "142",
+        "siteId": "STIPLTN011",
+        "siteName": "Saidapet Metro Station",
+        "serverTimestamp": "2022-08-25 04:58:55"
+      },
+      {
+        "siteRid": "141",
+        "siteId": "STIPLTN010",
+        "siteName": "Nandanam Metro Station",
+        "serverTimestamp": "2022-08-25 04:59:29"
+      },
+      {
+        "siteRid": "140",
+        "siteId": "STIPLTN009",
+        "siteName": "Teynampet Metro Station",
+        "serverTimestamp": "2022-08-25 04:59:06"
+      },
+      {
+        "siteRid": "139",
+        "siteId": "STIPLTN008",
+        "siteName": "AG-DMS Metro Station",
+        "serverTimestamp": "2022-08-25 04:59:28"
+      },
+      {
+        "siteRid": "138",
+        "siteId": "STIPLTN007",
+        "siteName": "Thousand Lights Metro Station",
+        "serverTimestamp": "2022-08-25 04:58:45"
+      },
+      {
+        "siteRid": "137",
+        "siteId": "STIPLTN006",
+        "siteName": "LIC Metro Station",
+        "serverTimestamp": "2022-08-25 04:56:54"
+      },
+      {
+        "siteRid": "136",
+        "siteId": "STIPLTN005",
+        "siteName": "Government Estate Metro Station",
+        "serverTimestamp": "2022-08-14 06:49:43"
+      },
+      {
+        "siteRid": "143",
+        "siteId": "STIPLTN004",
+        "siteName": "Central Metro",
+        "serverTimestamp": "2022-08-24 14:36:01"
+      },
+      {
+        "siteRid": "131",
+        "siteId": "STIPLTN003",
+        "siteName": "High Court Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:19"
+      },
+      {
+        "siteRid": "132",
+        "siteId": "STIPLTN002",
+        "siteName": "Mannadi Metro Station",
+        "serverTimestamp": "2022-07-01 12:08:18"
+      },
+      {
+        "siteRid": "133",
+        "siteId": "STIPLTN001",
+        "siteName": "Washer Menpet Metro Station",
+        "serverTimestamp": "2022-08-25 04:58:25"
+      },
+      {
+        "siteRid": "328",
+        "siteId": "STIPLRJ017",
+        "siteName": "Udaipur Airport",
+        "serverTimestamp": "2022-08-20 06:47:57"
+      },
+      {
+        "siteRid": "286",
+        "siteId": "STIPLRJ015",
+        "siteName": "Jodhpur Airport",
+        "serverTimestamp": "2022-08-24 10:40:15"
+      },
+      {
+        "siteRid": "158",
+        "siteId": "STIPLRJ012",
+        "siteName": "Sindhi Camp Metro Station",
+        "serverTimestamp": "2022-08-25 04:59:24"
+      },
+      {
+        "siteRid": "157",
+        "siteId": "STIPLRJ011",
+        "siteName": "Railway Station Metro Station",
+        "serverTimestamp": "2022-08-25 04:56:35"
+      },
+      {
+        "siteRid": "156",
+        "siteId": "STIPLRJ010",
+        "siteName": "Civil Lines Metro Station",
+        "serverTimestamp": "2022-08-25 04:58:13"
+      },
+      {
+        "siteRid": "155",
+        "siteId": "STIPLRJ009",
+        "siteName": "Ram Nagar Metro Station",
+        "serverTimestamp": "2022-08-25 04:58:42"
+      },
+      {
+        "siteRid": "154",
+        "siteId": "STIPLRJ008",
+        "siteName": "Shyam Nagar Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:34"
+      },
+      {
+        "siteRid": "153",
+        "siteId": "STIPLRJ007",
+        "siteName": "Vivek Vihar Metro Station",
+        "serverTimestamp": "2022-08-25 04:58:52"
+      },
+      {
+        "siteRid": "152",
+        "siteId": "STIPLRJ006",
+        "siteName": "New Aatish Market Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:29"
+      },
+      {
+        "siteRid": "151",
+        "siteId": "STIPLRJ005",
+        "siteName": "Mansarovar Metro Station",
+        "serverTimestamp": "2022-03-15 20:11:34"
+      },
+      {
+        "siteRid": "244",
+        "siteId": "STIPLNESA6",
+        "siteName": "Dibrugarh Airport",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "243",
+        "siteId": "STIPLNESA3",
+        "siteName": "Imphal Airport",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "242",
+        "siteId": "STIPLNESA1",
+        "siteName": "Silchar Airport",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "172",
+        "siteId": "STIPLMUM71",
+        "siteName": "Kohinoor Square",
+        "serverTimestamp": "2022-08-15 04:37:17"
+      },
+      {
+        "siteRid": "174",
+        "siteId": "STIPLMUM69",
+        "siteName": "Lodha World View",
+        "serverTimestamp": "2022-06-02 01:28:16"
+      },
+      {
+        "siteRid": "180",
+        "siteId": "STIPLMUM46",
+        "siteName": "Nesco IT Park",
+        "serverTimestamp": "2022-07-15 10:18:52"
+      },
+      {
+        "siteRid": "173",
+        "siteId": "STIPLMUM43",
+        "siteName": "India Bulls ",
+        "serverTimestamp": "2022-05-13 04:03:16"
+      },
+      {
+        "siteRid": "176",
+        "siteId": "STIPLMUM35",
+        "siteName": "Nathani Heights ",
+        "serverTimestamp": "2022-06-11 07:43:42"
+      },
+      {
+        "siteRid": "178",
+        "siteId": "STIPLMU786",
+        "siteName": "Akshar Business Park",
+        "serverTimestamp": "2022-03-31 08:28:06"
+      },
+      {
+        "siteRid": "175",
+        "siteId": "STIPLMU304",
+        "siteName": "One International Center  IFC4",
+        "serverTimestamp": "2022-08-25 04:56:58"
+      },
+      {
+        "siteRid": "179",
+        "siteId": "STIPLMU222",
+        "siteName": "Q Park 1",
+        "serverTimestamp": "2022-08-11 16:55:24"
+      },
+      {
+        "siteRid": "210",
+        "siteId": "STIPLMHG63",
+        "siteName": "Amanora Mall West Block",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "209",
+        "siteId": "STIPLMHG62",
+        "siteName": "Amanora Mall East Block",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "208",
+        "siteId": "STIPLMHG52",
+        "siteName": "D Y Patil Hospital",
+        "serverTimestamp": "2022-08-25 04:58:21"
+      },
+      {
+        "siteRid": "207",
+        "siteId": "STIPLMHG48",
+        "siteName": "EON POD 2B",
+        "serverTimestamp": "2022-08-04 10:35:58"
+      },
+      {
+        "siteRid": "205",
+        "siteId": "STIPLMHG45",
+        "siteName": "PANCHSHEEL Tower Pune",
+        "serverTimestamp": "2022-03-31 12:23:17"
+      },
+      {
+        "siteRid": "206",
+        "siteId": "STIPLMHG15",
+        "siteName": "Blue Ridge Bldg No 9",
+        "serverTimestamp": "2022-08-25 04:56:46"
+      },
+      {
+        "siteRid": "211",
+        "siteId": "STIPLMHG08",
+        "siteName": "ICC Devi Gaurav IT Park",
+        "serverTimestamp": "2022-08-25 04:57:00"
+      },
+      {
+        "siteRid": "159",
+        "siteId": "STIPLKL258",
+        "siteName": "Kannur International Airport COW",
+        "serverTimestamp": "2022-04-17 13:30:15"
+      },
+      {
+        "siteRid": "241",
+        "siteId": "STIPLKL040",
+        "siteName": "Bagdogra Airport",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "240",
+        "siteId": "STIPLKL019",
+        "siteName": "JW Marriott",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "239",
+        "siteId": "STIPLKL018",
+        "siteName": "Diamond Heritage",
+        "serverTimestamp": "2022-08-21 15:12:11"
+      },
+      {
+        "siteRid": "238",
+        "siteId": "STIPLKL015",
+        "siteName": "Calcutta Medical College",
+        "serverTimestamp": "2022-07-28 04:58:21"
+      },
+      {
+        "siteRid": "191",
+        "siteId": "STIPLHP208",
+        "siteName": "Atal Tunnel Bts Location",
+        "serverTimestamp": "2022-04-07 08:26:12"
+      },
+      {
+        "siteRid": "218",
+        "siteId": "STIPLHP006",
+        "siteName": "HP University Shimla - Dr Ambedkar Bhawan",
+        "serverTimestamp": "2022-08-25 04:59:43"
+      },
+      {
+        "siteRid": "217",
+        "siteId": "STIPLHP005",
+        "siteName": "HP University Shimla - Library Block",
+        "serverTimestamp": "2022-03-10 07:51:37"
+      },
+      {
+        "siteRid": "215",
+        "siteId": "STIPLHP004",
+        "siteName": "HP University Shimla - Boys Hostel",
+        "serverTimestamp": "2022-08-25 03:22:43"
+      },
+      {
+        "siteRid": "216",
+        "siteId": "STIPLHP003",
+        "siteName": "HP University Shimla - Admin Block",
+        "serverTimestamp": "2022-08-25 04:55:04"
+      },
+      {
+        "siteRid": "219",
+        "siteId": "STIPLHP001",
+        "siteName": "Ripon Hospital",
+        "serverTimestamp": "2022-08-25 04:42:38"
+      },
+      {
+        "siteRid": "163",
+        "siteId": "STIPLHAR03",
+        "siteName": "AIIMS Jhajjar (Academic block)",
+        "serverTimestamp": "2022-08-25 04:59:25"
+      },
+      {
+        "siteRid": "161",
+        "siteId": "STIPLHAR02",
+        "siteName": "AIIMS Jhajjar (Hospital Block)",
+        "serverTimestamp": "2022-08-25 04:56:38"
+      },
+      {
+        "siteRid": "162",
+        "siteId": "STIPLHAR01",
+        "siteName": "AIIMS Jhajjar (CR Block)",
+        "serverTimestamp": "2022-08-25 04:59:47"
+      },
+      {
+        "siteRid": "193",
+        "siteId": "STIPLDL137",
+        "siteName": "DLF Mall Of India",
+        "serverTimestamp": "2022-08-25 04:58:54"
+      },
+      {
+        "siteRid": "285",
+        "siteId": "STIPLDL123",
+        "siteName": "Arrow City Gurgaon (Cow Site) 1",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "165",
+        "siteId": "STIPLDL114",
+        "siteName": "Indirapuram Habitat Centre",
+        "serverTimestamp": "2022-08-24 23:01:39"
+      },
+      {
+        "siteRid": "168",
+        "siteId": "STIPLDL104",
+        "siteName": "ITHUM",
+        "serverTimestamp": "2022-08-12 10:00:32"
+      },
+      {
+        "siteRid": "187",
+        "siteId": "STIPLDL103",
+        "siteName": "Government Institute of Medical Sciences",
+        "serverTimestamp": "2022-07-21 22:50:48"
+      },
+      {
+        "siteRid": "184",
+        "siteId": "STIPLDL097",
+        "siteName": "DLF Cyber Park",
+        "serverTimestamp": "2022-08-25 04:59:15"
+      },
+      {
+        "siteRid": "170",
+        "siteId": "STIPLDL095",
+        "siteName": "Rohini Court",
+        "serverTimestamp": "2022-08-25 04:59:35"
+      },
+      {
+        "siteRid": "227",
+        "siteId": "STIPLDL093",
+        "siteName": "IGI Metro station T3",
+        "serverTimestamp": "2022-08-13 13:50:04"
+      },
+      {
+        "siteRid": "237",
+        "siteId": "STIPLDL092",
+        "siteName": "Aerocity Metro Station terminal Two",
+        "serverTimestamp": "2022-08-19 09:07:38"
+      },
+      {
+        "siteRid": "177",
+        "siteId": "STIPLDL062",
+        "siteName": "IIT Vishkarma Bhawan",
+        "serverTimestamp": "2022-08-25 04:59:31"
+      },
+      {
+        "siteRid": "186",
+        "siteId": "STIPLDL061",
+        "siteName": "IIT LCH Building",
+        "serverTimestamp": "2022-08-18 07:42:24"
+      },
+      {
+        "siteRid": "164",
+        "siteId": "STIPLDL045",
+        "siteName": "Super Specialty Pediatric Hospital",
+        "serverTimestamp": "2022-08-25 04:57:25"
+      },
+      {
+        "siteRid": "182",
+        "siteId": "STIPLDL041",
+        "siteName": "World Trade Tower",
+        "serverTimestamp": "2022-08-25 04:59:02"
+      },
+      {
+        "siteRid": "192",
+        "siteId": "STIPLDL040",
+        "siteName": "JMD Megapolis",
+        "serverTimestamp": "2022-08-25 04:56:47"
+      },
+      {
+        "siteRid": "183",
+        "siteId": "STIPLDL039",
+        "siteName": "Suncity Success Tower",
+        "serverTimestamp": "2022-08-25 04:56:49"
+      },
+      {
+        "siteRid": "188",
+        "siteId": "STIPLDEL60",
+        "siteName": "IIT MSB & Admin Block",
+        "serverTimestamp": "2022-08-25 04:59:34"
+      },
+      {
+        "siteRid": "194",
+        "siteId": "STIPLDEL57",
+        "siteName": "IREO Grand Hyatt",
+        "serverTimestamp": "2022-08-24 15:57:01"
+      },
+      {
+        "siteRid": "171",
+        "siteId": "STIPLDEL34",
+        "siteName": "Sanjay Gandhi Hospital",
+        "serverTimestamp": "2022-08-25 04:57:07"
+      },
+      {
+        "siteRid": "236",
+        "siteId": "STIPLDEL32",
+        "siteName": "Rajiv Gandhi Super specialty Hospital Delhi",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "185",
+        "siteId": "STIPLDEL31",
+        "siteName": "AIIMS Trauma Center",
+        "serverTimestamp": "2022-08-25 04:57:07"
+      },
+      {
+        "siteRid": "190",
+        "siteId": "STIPLDEL19",
+        "siteName": "Orient Bestech Business Tower",
+        "serverTimestamp": "2022-08-25 04:58:52"
+      },
+      {
+        "siteRid": "259",
+        "siteId": "STIPLD1541",
+        "siteName": "CTST Line 6",
+        "serverTimestamp": "2022-08-25 04:59:31"
+      },
+      {
+        "siteRid": "280",
+        "siteId": "STIPLD1255",
+        "siteName": "Mandi Houe -3",
+        "serverTimestamp": "2022-08-21 09:15:14"
+      },
+      {
+        "siteRid": "277",
+        "siteId": "STIPLD1254",
+        "siteName": "Janpath",
+        "serverTimestamp": "2022-08-25 04:56:40"
+      },
+      {
+        "siteRid": "274",
+        "siteId": "STIPLD1253",
+        "siteName": "Barakhamba Rd",
+        "serverTimestamp": "2022-08-14 00:18:31"
+      },
+      {
+        "siteRid": "272",
+        "siteId": "STIPLD1252",
+        "siteName": "Mandi Houe-Line-6",
+        "serverTimestamp": null
+      },
+      {
+        "siteRid": "269",
+        "siteId": "STIPLD1251",
+        "siteName": "Dwarka Sec 21 line-3",
+        "serverTimestamp": "2022-08-25 04:57:44"
+      },
+      {
+        "siteRid": "266",
+        "siteId": "STIPLD1250",
+        "siteName": "Khan Market",
+        "serverTimestamp": "2022-08-25 04:58:54"
+      },
+      {
+        "siteRid": "263",
+        "siteId": "STIPLD1249",
+        "siteName": "Kashmere Gate",
+        "serverTimestamp": "2022-08-25 04:59:33"
+      },
+      {
+        "siteRid": "262",
+        "siteId": "STIPLD1248",
+        "siteName": "Chandni chowk",
+        "serverTimestamp": "2022-08-25 04:57:39"
+      },
+      {
+        "siteRid": "260",
+        "siteId": "STIPLD1247",
+        "siteName": "Chawri bazar",
+        "serverTimestamp": "2022-08-22 02:00:35"
+      },
+      {
+        "siteRid": "258",
+        "siteId": "STIPLD1246",
+        "siteName": "New Delhi line 2",
+        "serverTimestamp": "2022-08-25 04:58:53"
+      },
+      {
+        "siteRid": "257",
+        "siteId": "STIPLD1245",
+        "siteName": "Rajiv Chowk",
+        "serverTimestamp": "2022-08-25 04:59:15"
+      },
+      {
+        "siteRid": "273",
+        "siteId": "STIPLD1242",
+        "siteName": "Saket",
+        "serverTimestamp": "2022-08-20 23:46:58"
+      },
+      {
+        "siteRid": "231",
+        "siteId": "STIPLD1241",
+        "siteName": "Vidhan Sabha metro station",
+        "serverTimestamp": "2022-08-25 04:59:45"
+      },
+      {
+        "siteRid": "232",
+        "siteId": "STIPLD1240",
+        "siteName": "Civil Lines Metro station",
+        "serverTimestamp": "2022-08-25 04:57:08"
+      },
+      {
+        "siteRid": "275",
+        "siteId": "STIPLD1239",
+        "siteName": "JLN stadium",
+        "serverTimestamp": "2022-08-25 04:58:59"
+      },
+      {
+        "siteRid": "276",
+        "siteId": "STIPLD1238",
+        "siteName": "Jang Pura",
+        "serverTimestamp": "2022-08-25 04:59:17"
+      },
+      {
+        "siteRid": "278",
+        "siteId": "STIPLD1237",
+        "siteName": "Lok Kalyan marg",
+        "serverTimestamp": "2022-08-25 04:58:56"
+      },
+      {
+        "siteRid": "279",
+        "siteId": "STIPLD1236",
+        "siteName": "Udyog Bhawan",
+        "serverTimestamp": "2022-08-25 04:58:49"
+      },
+      {
+        "siteRid": "256",
+        "siteId": "STIPLD1235",
+        "siteName": "CTST Line 2",
+        "serverTimestamp": "2022-08-25 04:59:32"
+      },
+      {
+        "siteRid": "267",
+        "siteId": "STIPLD1204",
+        "siteName": "Malviya Nagar",
+        "serverTimestamp": "2022-08-17 10:11:14"
+      },
+      {
+        "siteRid": "268",
+        "siteId": "STIPLD1203",
+        "siteName": "Hauz Khas Line-2",
+        "serverTimestamp": "2022-08-25 04:59:28"
+      },
+      {
+        "siteRid": "270",
+        "siteId": "STIPLD1202",
+        "siteName": "INA Line2",
+        "serverTimestamp": "2022-08-25 04:58:58"
+      },
+      {
+        "siteRid": "271",
+        "siteId": "STIPLD1201",
+        "siteName": "Jor Bagh",
+        "serverTimestamp": "2022-08-25 04:59:13"
+      },
+      {
+        "siteRid": "261",
+        "siteId": "STIPLD1178",
+        "siteName": "Patel Chowk",
+        "serverTimestamp": "2022-08-25 04:59:01"
+      },
+      {
+        "siteRid": "230",
+        "siteId": "STIPLD1177",
+        "siteName": "Vishwa Vidyalaya metro station",
+        "serverTimestamp": "2022-08-25 04:57:07"
+      },
+      {
+        "siteRid": "235",
+        "siteId": "STIPLD1176",
+        "siteName": "GTB Nager Metro Station",
+        "serverTimestamp": "2022-08-25 04:57:33"
+      },
+      {
+        "siteRid": "264",
+        "siteId": "STIPLD1175",
+        "siteName": "AIIMS DMRC line-2",
+        "serverTimestamp": "2022-08-25 04:13:14"
+      },
+      {
+        "siteRid": "265",
+        "siteId": "STIPLD1174",
+        "siteName": "Green Park",
+        "serverTimestamp": "2022-08-25 04:58:52"
+      },
+      {
+        "siteRid": "189",
+        "siteId": "STIPDEL133",
+        "siteName": "Arrow City Gurgaon (Cow Site) 2",
+        "serverTimestamp": "2022-08-25 04:57:58"
+      },
+      {
+        "siteRid": "212",
+        "siteId": "STHPMGG065",
+        "siteName": "Goa Airport",
+        "serverTimestamp": "2022-08-17 09:30:18"
+      },
+      {
+        "siteRid": "111",
+        "siteId": "PALAMVIHAR",
+        "siteName": "PALAMVIHAR",
+        "serverTimestamp": "2022-08-25 04:59:30"
+      },
+      {
+        "siteRid": "169",
+        "siteId": "MSCONVERSE",
+        "siteName": "AIIMS Conversence Building",
+        "serverTimestamp": "2022-08-16 12:56:11"
+      },
+      {
+        "siteRid": "167",
+        "siteId": "DWARDBLOCK",
+        "siteName": "AIIMS ward Block",
+        "serverTimestamp": "2022-08-12 07:51:02"
+      },
+      {
+        "siteRid": "122",
+        "siteId": "DMRCOLSJSM",
+        "siteName": "SHIVAJI STADIUM",
+        "serverTimestamp": "2022-08-25 04:58:42"
+      },
+      {
+        "siteRid": "121",
+        "siteId": "DMRCOLNDRS",
+        "siteName": "New Delhi Airport line",
+        "serverTimestamp": "2022-08-25 04:59:39"
+      },
+      {
+        "siteRid": "120",
+        "siteId": "DMRCLAED21",
+        "siteName": "DWARKA SEC 21 airport line",
+        "serverTimestamp": "2022-08-25 04:57:53"
+      },
+      {
+        "siteRid": "123",
+        "siteId": "DMRCL9NJFH",
+        "siteName": "NAJAFGARH",
+        "serverTimestamp": "2022-08-25 04:56:33"
+      },
+      {
+        "siteRid": "117",
+        "siteId": "DMRCL9DSBS",
+        "siteName": "DHANSA BUS STAND",
+        "serverTimestamp": "2022-08-25 04:57:19"
+      },
+      {
+        "siteRid": "101",
+        "siteId": "DMRCL8VTVR",
+        "siteName": "VASANT VIHAR",
+        "serverTimestamp": "2022-08-25 04:59:19"
+      },
+      {
+        "siteRid": "118",
+        "siteId": "DMRCL8RKPM",
+        "siteName": "R.K. PURAM ",
+        "serverTimestamp": "2022-08-25 04:56:53"
+      },
+      {
+        "siteRid": "105",
+        "siteId": "DMRCL8PSPK",
+        "siteName": "PANCHSHEEL METRO",
+        "serverTimestamp": "2022-08-25 04:59:30"
+      },
+      {
+        "siteRid": "98",
+        "siteId": "DMRCL8PALM",
+        "siteName": "PALAM",
+        "serverTimestamp": "2022-08-25 04:59:42"
+      },
+      {
+        "siteRid": "110",
+        "siteId": "DMRCL8NUEE",
+        "siteName": "NEHRU ENCLAVE",
+        "serverTimestamp": "2022-08-25 04:59:10"
+      },
+      {
+        "siteRid": "102",
+        "siteId": "DMRCL8MIRK",
+        "siteName": "Munirka ",
+        "serverTimestamp": "2022-08-25 04:58:44"
+      },
+      {
+        "siteRid": "119",
+        "siteId": "DMRCL8KAMJ",
+        "siteName": "KALKAJI MANDIR",
+        "serverTimestamp": "2022-08-25 04:58:57"
+      },
+      {
+        "siteRid": "114",
+        "siteId": "DMRCL8JKPW",
+        "siteName": "JANAKPURI WEST",
+        "serverTimestamp": "2022-08-25 04:59:37"
+      },
+      {
+        "siteRid": "104",
+        "siteId": "DMRCL8IITM",
+        "siteName": "IIT MERTO SATAION",
+        "serverTimestamp": "2022-08-25 04:58:57"
+      },
+      {
+        "siteRid": "112",
+        "siteId": "DMRCL8IGI1",
+        "siteName": "IGI AIRPORT T1",
+        "serverTimestamp": "2022-08-25 04:58:03"
+      },
+      {
+        "siteRid": "103",
+        "siteId": "DMRCL8HKSM",
+        "siteName": "HAUZ KHAS Line-8",
+        "serverTimestamp": "2022-08-25 04:59:13"
+      },
+      {
+        "siteRid": "109",
+        "siteId": "DMRCL8GEEK",
+        "siteName": "GREATER KAILASH",
+        "serverTimestamp": "2022-08-25 04:58:04"
+      },
+      {
+        "siteRid": "97",
+        "siteId": "DMRCL8DSHP",
+        "siteName": "DASHRATHPURI",
+        "serverTimestamp": "2022-08-25 04:58:49"
+      },
+      {
+        "siteRid": "113",
+        "siteId": "DMRCL8DBMR",
+        "siteName": "DABRI MOR",
+        "serverTimestamp": "2022-08-25 04:54:59"
+      },
+      {
+        "siteRid": "106",
+        "siteId": "DMRCL8CDLI",
+        "siteName": "CHIRAG DILLI",
+        "serverTimestamp": "2022-08-25 04:58:34"
+      },
+      {
+        "siteRid": "95",
+        "siteId": "DMRCL7VNPR",
+        "siteName": "VINOHA PURI",
+        "serverTimestamp": "2022-08-25 04:57:56"
+      },
+      {
+        "siteRid": "99",
+        "siteId": "DMRCL7SOJI",
+        "siteName": "SAROJONI NAGAR",
+        "serverTimestamp": "2022-08-25 04:57:55"
+      },
+      {
+        "siteRid": "71",
+        "siteId": "DMRCL7SOEN",
+        "siteName": "South Ex. Metro",
+        "serverTimestamp": "2022-08-25 04:55:32"
+      },
+      {
+        "siteRid": "96",
+        "siteId": "DMRCL7PINA",
+        "siteName": "INA  Line-7",
+        "serverTimestamp": "2022-08-25 04:57:43"
+      },
+      {
+        "siteRid": "75",
+        "siteId": "DMRCL7NIZM",
+        "siteName": "H NIZAMUDDIN METRO",
+        "serverTimestamp": "2022-08-25 04:57:40"
+      },
+      {
+        "siteRid": "94",
+        "siteId": "DMRCL7LNJP",
+        "siteName": "LAJPAT NAGAR",
+        "serverTimestamp": "2022-08-25 04:57:59"
+      },
+      {
+        "siteRid": "100",
+        "siteId": "DMRCL7BKCP",
+        "siteName": "BHIKAJI CAMA PLACE",
+        "serverTimestamp": "2022-08-25 04:49:58"
+      },
+      {
+        "siteRid": "93",
+        "siteId": "DMRCL7AHRM",
+        "siteName": "ASHRAM METRO STATION",
+        "serverTimestamp": "2022-08-25 04:58:02"
+      },
+      {
+        "siteRid": "166",
+        "siteId": "DLRPCENTER",
+        "siteName": "AIIMS Centrail Building",
+        "serverTimestamp": "2022-07-10 14:58:49"
+      },
+      {
+        "siteRid": "69",
+        "siteId": "DLOBESTCYB",
+        "siteName": "Bestech Cyber Park",
+        "serverTimestamp": "2022-08-25 04:59:08"
+      },
+      {
+        "siteRid": "70",
+        "siteId": "DLOAERCOW1",
+        "siteName": "Aerocity Mahipalpur(DG)",
+        "serverTimestamp": "2022-08-25 04:59:27"
+      },
+      {
+        "siteRid": "68",
+        "siteId": "DLIOSATHOS",
+        "siteName": "IIT Satpura",
+        "serverTimestamp": "2022-08-25 04:59:16"
+      },
+      {
+        "siteRid": "67",
+        "siteId": "DLIOHIMHOS",
+        "siteName": "IIT Himadri",
+        "serverTimestamp": "2022-08-25 04:57:56"
+      },
+      {
+        "siteRid": "66",
+        "siteId": "DLIOAIMSDB",
+        "siteName": "DLIOAIMSDB",
+        "serverTimestamp": "2022-08-25 04:57:23"
+      },
+      {
+        "siteRid": "160",
+        "siteId": "CNBC0000DL",
+        "siteName": "Chacha Nehru Bal Chiktasalya (CNBC)",
+        "serverTimestamp": "2022-08-25 04:59:02"
+      }
+    ]
+  },
+  {
+    "userId": "110",
+    "customerId": "28",
+    "name": "9414001632",
+    "emailTo": "meenakk74@gmail.com",
+    "emailCC": "it.support@sysinfra.in,sanat.gupta@sysinfra.in,girish.jha@sysinfra.in",
+    "sites": [
+      {
+        "siteRid": "195",
+        "siteId": "0MALAPU001",
+        "siteName": "MALPURA",
+        "serverTimestamp": "2022-08-25 04:56:27"
+      }
+    ]
+  },
+  {
+    "userId": "112",
+    "customerId": "31",
+    "name": "9794837150",
+    "emailTo": "ranjeetje800@gmail.com",
+    "emailCC": "it.support@sysinfra.in",
+    "sites": [
+      {
+        "siteRid": "234",
+        "siteId": "EKLMCRC000",
+        "siteName": "EKDIL",
+        "serverTimestamp": "2022-08-03 07:09:45"
+      },
+      {
+        "siteRid": "233",
+        "siteId": "CERETW3410",
+        "siteName": "ETAWAH JUNCTION",
+        "serverTimestamp": "2022-08-21 13:54:28"
+      }
+    ]
+  },
+  {
+    "userId": "113",
+    "customerId": "32",
+    "name": "ATCDEL ",
+    "emailTo": "Kamlesh.Sahu@atctower.in ",
+    "emailCC": "Dushyant@sysinfra.in,Sandeep.Rajsharma@atctower.in,Sanjay.Saxena@atctower.in ,Amit.Gulhane@atctower.in ,ram.sharma@sysinfra.in",
+    "sites": [
+      {
+        "siteRid": "254",
+        "siteId": "DELDELA077",
+        "siteName": "Mavi village",
+        "serverTimestamp": "2022-08-25 04:59:03"
+      },
+      {
+        "siteRid": "253",
+        "siteId": "DELDELA030",
+        "siteName": "Sec-88,FBD",
+        "serverTimestamp": "2022-08-25 04:59:39"
+      },
+      {
+        "siteRid": "282",
+        "siteId": "DELDEL2490",
+        "siteName": "Surya vihar_1",
+        "serverTimestamp": "2022-08-25 04:58:57"
+      },
+      {
+        "siteRid": "281",
+        "siteId": "DELDEL2457",
+        "siteName": "BASANTPUR NEW",
+        "serverTimestamp": "2022-08-25 04:59:39"
+      },
+      {
+        "siteRid": "245",
+        "siteId": "DELDEL2300",
+        "siteName": "PAKHAL",
+        "serverTimestamp": "2022-08-25 04:59:29"
+      }
+    ]
+  },
+  {
+    "userId": "138",
+    "customerId": "34",
+    "name": "9693609355",
+    "emailTo": "devashish@sisrtd.com",
+    "emailCC": "devashish@sisrtd.com",
+    "sites": [
+      {
+        "siteRid": "214",
+        "siteId": "SOFTTEST02",
+        "siteName": "IPROTECT05",
+        "serverTimestamp": "2022-08-13 05:15:32"
+      },
+      {
+        "siteRid": "213",
+        "siteId": "SOFTTEST01",
+        "siteName": "IPROTECT04",
+        "serverTimestamp": "2022-08-09 06:22:24"
+      }
+    ]
+  },
+  {
+    "userId": "139",
+    "customerId": "35",
+    "name": "DEEPANKER",
+    "emailTo": "technicianhoquee1991@gmail.com",
+    "emailCC": "it.support@sysinfra.in",
+    "sites": [
+      {
+        "siteRid": "255",
+        "siteId": "UAS3920000",
+        "siteName": "No 1 GADHOA",
+        "serverTimestamp": "2022-08-03 21:56:21"
+      }
+    ]
+  }
+]

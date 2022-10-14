@@ -1,0 +1,28 @@
+{
+  "1001": {
+    "+91-0000000001": [
+      {
+        "datetime": "2022-07-11 20:17:23",
+        "status": "Call Rejected"
+      },
+      {
+        "datetime": "2022-07-11 20:17:23",
+        "status": "Call Received"
+      }
+    ],
+    "+91-0000000002": [
+      {
+        "datetime": "2022-07-11 20:17:23",
+        "status": "Call Rejected"
+      },
+      {
+        "datetime": "2022-07-11 20:17:23",
+        "status": "Call Rejected"
+      },
+      {
+        "datetime": "2022-07-11 20:17:23",
+        "status": "Call Rejected"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+-- fetch site ids list
+select DISTINCT alarms.siteRid
+FROM alarms
+-- JOIN sites ON sites.siteRid = alarms.siteRid
+WHERE alarms.insertedAt BETWEEN '2022-07-01 00:00:00' AND now()
+AND alarms.siteRid IN (111,263,109,277,124,164)
+AND alarms.mainPower < 46
+-- AND sites.customerId = 25
+AND alarms.customerId = 25
+LIMIT 0, 10
+;
+
+-- fetch site ids list count for pagination
+select COUNT(DISTINCT alarms.siteRid)
+FROM alarms
+-- JOIN sites ON sites.siteRid = alarms.siteRid
+WHERE alarms.insertedAt BETWEEN '2022-07-01 00:00:00' AND now()
+AND alarms.siteRid IN (111,263,109,277,124,164)
+AND alarms.mainPower < 46
+-- AND sites.customerId = 25
+AND alarms.customerId = 25
+;
+
+
+
+
+-- fetch
+SELECT alarms.siteRid, alarms.siteId, COUNT(alarms.siteRid)
+FROM alarms
+WHERE alarms.insertedAt BETWEEN '2022-07-01 00:00:00' AND now()
+AND alarms.siteRid IN (111,263,109,277,124,164)
+ GROUP BY alarms.siteRid HAVING COUNT(alarms.siteRid) > 1
+ ORDER BY COUNT(alarms.siteRid) DESC
+ 
+ LIMIT 0, 10;

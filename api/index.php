@@ -1,82 +1,62 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: *");
-header("Access-Control-Allow-Methods: *");
+// show errors
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+// 
+// response headers
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json; charset=UTF-8');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Methods: PUT');
+header('Access-Control-Max-Age: 3600');
+header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
 
-include 'DbConnect.php';
-$objDb = new DbConnect;
-$conn = $objDb->connect();
+// include statements
+require_once __DIR__ . '/common/paths.php';
+require_once $pathUrlParams;
+require_once $pathCustomersController;
+require_once $pathCustomers;
 
-$method = $_SERVER['REQUEST_METHOD'];
-switch($method) {
-    case "GET":
-        $sql = "SELECT * FROM users";
-        $path = explode('/', $_SERVER['REQUEST_URI']);
-        if(isset($path[3]) && is_numeric($path[3])) {
-            $sql .= " WHERE id = :id";
-            $stmt = $conn->prepare($sql);
-            $stmt->bindParam(':id', $path[3]);
-            $stmt->execute();
-            $users = $stmt->fetch(PDO::FETCH_ASSOC);
-        } else {
-            $stmt = $conn->prepare($sql);
-            $stmt->execute();
-            $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+// frombody post request data
+// checking for the format of json object
+$frombody = json_decode(file_get_contents('php://input'));
+
+// attribute routing enabled
+$urlParsed = parse_url($_SERVER['REQUEST_URI']);
+
+# extracting the url params
+extract($_GET);
+
+// print_r($_GET);
+
+// if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
+//     $host = 'https://ip.sisrtd.com';
+//     $path = $urlParsed['path'];
+
+// }
+// print_r($urlParsed);
+switch ($urlParsed['path']) {
+
+        // admin api endpoints
+
+    case '/api/customers':
+        switch ($_SERVER['REQUEST_METHOD']) {
+            case 'GET':
+                echo json_encode(getCustomers($customerId, $pageNumber, $pageSize));
+                // echo "hello world..";
+                break;
+            case 'POST':
+                echo json_encode(createCustomer($frombody));
+                break;
+            case 'PUT':
+                echo json_encode(updateCustomer($customerId, $frombody));
+                break;
+            case 'DELETE':
+                echo json_encode(deleteCustomer($customerId));
+                break;
         }
-
-        echo json_encode($users);
-        break;
-    case "POST":
-        $user = json_decode( file_get_contents('php://input') );
-        $sql = "INSERT INTO users(id, name, email, mobile, created_at) VALUES(null, :name, :email, :mobile, :created_at)";
-        $stmt = $conn->prepare($sql);
-        $created_at = date('Y-m-d');
-        $stmt->bindParam(':name', $user->name);
-        $stmt->bindParam(':email', $user->email);
-        $stmt->bindParam(':mobile', $user->mobile);
-        $stmt->bindParam(':created_at', $created_at);
-
-        if($stmt->execute()) {
-            $response = ['status' => 1, 'message' => 'Record created successfully.'];
-        } else {
-            $response = ['status' => 0, 'message' => 'Failed to create record.'];
-        }
-        echo json_encode($response);
-        break;
-
-    case "PUT":
-        $user = json_decode( file_get_contents('php://input') );
-        $sql = "UPDATE users SET name= :name, email =:email, mobile =:mobile, updated_at =:updated_at WHERE id = :id";
-        $stmt = $conn->prepare($sql);
-        $updated_at = date('Y-m-d');
-        $stmt->bindParam(':id', $user->id);
-        $stmt->bindParam(':name', $user->name);
-        $stmt->bindParam(':email', $user->email);
-        $stmt->bindParam(':mobile', $user->mobile);
-        $stmt->bindParam(':updated_at', $updated_at);
-
-        if($stmt->execute()) {
-            $response = ['status' => 1, 'message' => 'Record updated successfully.'];
-        } else {
-            $response = ['status' => 0, 'message' => 'Failed to update record.'];
-        }
-        echo json_encode($response);
-        break;
-
-    case "DELETE":
-        $sql = "DELETE FROM users WHERE id = :id";
-        $path = explode('/', $_SERVER['REQUEST_URI']);
-
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(':id', $path[3]);
-
-        if($stmt->execute()) {
-            $response = ['status' => 1, 'message' => 'Record deleted successfully.'];
-        } else {
-            $response = ['status' => 0, 'message' => 'Failed to delete record.'];
-        }
-        echo json_encode($response);
         break;
 }

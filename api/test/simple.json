@@ -1,0 +1,33 @@
+[
+  {
+    "alarmId": "1001",
+    "alarmData": [
+      {
+        "mobile": "+91-0000000001",
+        "statuses": [
+          {
+            "datetime": "2022-07-11 20:17:23",
+            "status": "Call Missed"
+          },
+          {
+            "datetime": "2022-07-11 20:17:23",
+            "status": "Call Received"
+          }
+        ]
+      },
+      {
+        "mobile": "+91-0000000002",
+        "statuses": [
+          {
+            "datetime": "2022-07-11 20:17:23",
+            "status": "Call Missed"
+          },
+          {
+            "datetime": "2022-07-11 20:17:23",
+            "status": "Call Received"
+          }
+        ]
+      }
+    ]
+  }
+]

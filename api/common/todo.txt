@@ -1,0 +1,46 @@
+Migrate to A2 Hosting:
+
+Replace All
+2. __DIR__ . ' => __DIR__ . '
+
+
+-- Phase 2:
+ALTER TABLE  `siteUsers` ADD  `type` INT NOT NULL COMMENT  '0: clusters, 1: sites' AFTER  `userId` , ADD  `access` VARCHAR( 2000 ) AFTER  `type`
+update siteUsers set type = 1
+
+
+Full texts	userId
+	1.
+	2.
+	3.
+	4.
+	5.
+	6
+	8
+	10
+	11
+
+-- Phase 3:
+--import: Create Cluster table
+--query: ALTER TABLE  `sites` ADD  `clusterId` INT NULL AFTER  `customerId`
+--ui: insert a cluster
+--query: update sites set clusterId = 1
+--query: ALTER TABLE  `sites` ADD INDEX (  `clusterId` )
+--query: ALTER TABLE  `sites` ADD FOREIGN KEY (  `clusterId` ) REFERENCES  `dbSysinfra`.`clusters` (`clusterId`) ON DELETE RESTRICT ON UPDATE RESTRICT ;
+----------------------------------------------------------------------
+ALTER TABLE `users` ADD `isInternal` BIT NOT NULL AFTER `access`
+drop the column position from siteUsers
+-----------------------------------------------
+RENAME TABLE `dbSysinfra`.`settingsUpdate` TO `dbSysinfra`.`appSettingsUpdate` ;
+----------------------------------------------------------------
+ALTER TABLE `users` CHANGE `position` `position` INT( 11 ) NULL
+----------------------------------------------------------------
+ALTER TABLE `iProtect` ADD `mainsFrequency` INT NOT NULL AFTER `lvd7` ,
+ADD `dgFrequency` INT NOT NULL AFTER `mainsFrequency`
+----------------------------------------------------------------
+ALTER TABLE `customers` ADD `l1Email` VARCHAR( 255 ) NULL AFTER `address` ,
+ADD `l2Email` VARCHAR( 255 ) NULL AFTER `l1Email` ,
+ADD `l3Email` VARCHAR( 255 ) NULL AFTER `l2Email`
+
+
+
