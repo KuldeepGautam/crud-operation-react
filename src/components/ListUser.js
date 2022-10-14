@@ -1,6 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import UserTable from "./TableComponents/UserTable";
+
+const columns = [
+  { path: "cutomerId", label: "Customer ID" },
+  { path: "name", label: "Name" },
+];
 
 export default function ListUser() {
   const [users, setUsers] = useState([]);
@@ -9,7 +14,7 @@ export default function ListUser() {
   }, []);
 
   function getUsers() {
-    axios.get("http://192.168.0.182/api/customers").then(function (response) {
+    axios.get("http://192.168.6.189/api/customers").then(function (response) {
       console.log(response.data);
       setUsers(response.data);
     });
@@ -24,38 +29,39 @@ export default function ListUser() {
       });
   };
   return (
-    <div>
+    <div className="container-fluid">
       <h1>List Users</h1>
-      <table>
+      <UserTable
+        columns={columns}
+        data={sites}
+        pageNumber={currentPage}
+        pageSize={pageSize}
+      />
+
+      {/* <table className="table table-hover">
         <thead>
           <tr>
-            <th>#</th>
+            <th>Id</th>
             <th>Name</th>
-            <th>Email</th>
             <th>Mobile</th>
-            <th>Actions</th>
+            <th>Address</th>
+            <th>L1 Email</th>
+            <th>L2 Email</th>
+            <th>L3 Email</th>
           </tr>
         </thead>
         <tbody>
-          {users.map((user, key) => (
-            <ul key={key}>
-              <li>{user.response.data && user.response.data.name}</li>
-              {/* <td>{user.name}</td>
-              <td>{user.email}</td>
-              <td>{user.mobile}</td>
-              <td>
-                <Link
-                  to={`user/${user.id}/edit`}
-                  style={{ marginRight: "10px" }}
-                >
-                  Edit
-                </Link>
-                <button onClick={() => deleteUser(user.id)}>Delete</button>
-              </td> */}
-            </ul>
-          ))}
+          <tr>
+            <td>{users.response && users.response.data[0].customerId}</td>
+            <td>{users.response && users.response.data[0].name}</td>
+            <td>{users.response && users.response.data[0].mobileNo}</td>
+            <td>{users.response && users.response.data[0].address}</td>
+            <td>{users.response && users.response.data[0].l1Email}</td>
+            <td>{users.response && users.response.data[0].l2Email}</td>
+            <td>{users.response && users.response.data[0].l3Email}</td>
+          </tr>
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 }
