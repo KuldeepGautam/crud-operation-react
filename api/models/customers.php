@@ -4,12 +4,12 @@
 require_once $db;
 require_once $pathGeneralMethods;
 
-function selectCustomers($customerId, $pageNumber = 1, $pageSize = 5)
+function selectCustomers($customerId, $pageNumber = 1, $pageSize = 10)
 {
     $customerId = !isnull($customerId) ? $customerId : 'NULL'; //number
 
     $pageNumber = !isnull($pageNumber) ? $pageNumber : 1; //number
-    $pageSize = !isnull($pageSize) ? $pageSize : 5; //number
+    $pageSize = !isnull($pageSize) ? $pageSize : 10; //number
     $offset = $pageSize * ($pageNumber - 1);
 
     $sql =

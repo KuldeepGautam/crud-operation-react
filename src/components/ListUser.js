@@ -9,7 +9,7 @@ export default function ListUser() {
   }, []);
 
   function getUsers() {
-    axios.get("http://192.168.0.182/api/customers").then(function (response) {
+    axios.get("http://192.168.63.189/api/customers").then(function (response) {
       console.log(response.data);
       setState(response.data.response.data);
     });
