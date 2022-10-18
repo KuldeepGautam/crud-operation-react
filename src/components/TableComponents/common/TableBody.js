@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
-// import { hasValue } from "../../utils/helper";
+import { hasValue } from "./utils/helper";
 
 class TableBody extends Component {
   renderCell = (item, column) => {
