@@ -16,14 +16,14 @@ export default function ListUser() {
     event.preventDefault();
 
     axios
-      .post("http://192.168.0.182/api/customers", inputs)
+      .post("http://192.168.63.189/api/customers", inputs)
       .then(function (response) {
         console.log(response.data.response.data);
         navigate("/");
       });
   };
   return (
-    <div>
+    <div className="container">
       <h1>Create user</h1>
       <form onSubmit={handleSubmit}>
         <table cellSpacing="10">
@@ -62,7 +62,7 @@ export default function ListUser() {
             </tr>
             <tr>
               <td colSpan="2" align="right">
-                <button>Save</button>
+                <button className="btn btn-sm btn-primary">Save</button>
               </td>
             </tr>
           </tbody>
