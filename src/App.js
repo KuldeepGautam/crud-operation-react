@@ -1,13 +1,17 @@
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
-import './App.css';
-import CreateUser from './components/CreateUser';
-import EditUser from './components/EditUser';
-import ListUser from './components/ListUser';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import CreateUser from "./components/CreateUser";
+import EditUser from "./components/EditUser";
+// import Form from "./components/Form";
+import ListUser from "./components/ListUser";
 
 function App() {
   return (
     <div className="App">
-      <h5>React CRUD operations using PHP API and MySQL</h5>
+      <br />
+      <h5 className="text-center">
+        React CRUD operations using PHP API and MySQL
+      </h5>
 
       <BrowserRouter>
         <nav>

@@ -16,7 +16,7 @@ export default function ListUser() {
     event.preventDefault();
 
     axios
-      .post("http://192.168.63.189/api/customers", inputs)
+      .post("http://192.168.0.182/api/customers", inputs)
       .then(function (response) {
         console.log(response.data.response.data);
         navigate("/");
@@ -46,7 +46,7 @@ export default function ListUser() {
             </tr>
             <tr>
               <th>
-                <label>Mobile: </label>
+                <label>Address: </label>
               </th>
               <td>
                 <input type="text" name="address" onChange={handleChange} />
