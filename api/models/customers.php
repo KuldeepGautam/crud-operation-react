@@ -17,10 +17,8 @@ function selectCustomers($customerId, $pageNumber = 1, $pageSize = 100)
             customerId,
             name,
             mobileNo,
-            address,
-            l1Email,
-            l2Email,
-            l3Email
+            email,
+            address
         FROM customers
         WHERE isDeleted = 0
         AND customerId = IFNULL($customerId, customerId)
@@ -57,10 +55,8 @@ function selectCustomers($customerId, $pageNumber = 1, $pageSize = 100)
             'customerId' => $row[0],
             'name' => $row[1],
             'mobileNo' => $row[2],
-            'address' => $row[3],
-            'l1Email' => $row[4],
-            'l2Email' => $row[5],
-            'l3Email' => $row[6],
+            'email' => $row[3],
+            'address' => $row[4],
         );
 
         array_push($dataTable, $dataRow);
@@ -86,6 +82,7 @@ function insertUpdateCustomer($inType, $customerId, $customer, $executedBy)
                 "INSERT INTO customers
                 SET name = '$name',
                     mobileNo = '$mobileNo',
+                    email = '$email',
                     address = '$address',
                     insertedBy = $executedBy,
                     insertedAt = NOW()";

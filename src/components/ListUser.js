@@ -28,16 +28,14 @@ export default function ListUser() {
     <div className="container-fluid">
       <h1>List Users</h1>
 
-      <table className="table table-hover">
+      <table width="100%" className="table table-hover">
         <thead>
           <tr>
             <th>Id</th>
             <th>Name</th>
             <th>Mobile</th>
+            <th>Email</th>
             <th>Address</th>
-            <th>L1 Email</th>
-            <th>L2 Email</th>
-            <th>L3 Email</th>
             <th>Operations</th>
           </tr>
         </thead>
@@ -47,10 +45,8 @@ export default function ListUser() {
               <td>{user.customerId}</td>
               <td>{user.name}</td>
               <td>{user.mobileNo}</td>
+              <td>{user.email}</td>
               <td>{user.address}</td>
-              <td>{user.l1Email}</td>
-              <td>{user.l2Email}</td>
-              <td>{user.l3Email}</td>
               <td>
                 <button className="m-1">Delete</button>
                 <button>Edit</button>

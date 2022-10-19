@@ -46,6 +46,14 @@ export default function ListUser() {
             </tr>
             <tr>
               <th>
+                <label>Email: </label>
+              </th>
+              <td>
+                <input type="text" name="email" onChange={handleChange} />
+              </td>
+            </tr>
+            <tr>
+              <th>
                 <label>Address: </label>
               </th>
               <td>
