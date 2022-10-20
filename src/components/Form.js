@@ -4,13 +4,13 @@ const Form = () => {
   const [formData, setFormData] = useState([]);
 
   const onHandleChange = (e) => {
-    const name = e.target.value;
-    setFormData({ name });
+    // const name = e.target.value;
+    setFormData(e.target.value);
   };
 
-  //   const onClickChange = (e) => {
-  //     e.preventDefault();
-  //   };
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <>
@@ -32,7 +32,11 @@ const Form = () => {
               <tr>
                 <td></td>
                 <td>
-                  <button type="submit" className="btn btn-primary">
+                  <button
+                    onSubmit={onSubmit}
+                    type="submit"
+                    className="btn btn-primary"
+                  >
                     Submit
                   </button>
                 </td>

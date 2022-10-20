@@ -18,7 +18,8 @@ function selectCustomers($customerId, $pageNumber = 1, $pageSize = 100)
             name,
             mobileNo,
             email,
-            address
+            address,
+            insertedAt
         FROM customers
         WHERE isDeleted = 0
         AND customerId = IFNULL($customerId, customerId)
@@ -57,6 +58,7 @@ function selectCustomers($customerId, $pageNumber = 1, $pageSize = 100)
             'mobileNo' => $row[2],
             'email' => $row[3],
             'address' => $row[4],
+            'insertedAt' => $row[7],
         );
 
         array_push($dataTable, $dataRow);

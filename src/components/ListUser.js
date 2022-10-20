@@ -9,8 +9,12 @@ export default function ListUser() {
   }, []);
 
   function getUsers() {
+<<<<<<< HEAD
     axios.get("http://192.168.0.182/api/customers").then(function (response) {
       // axios.get("http://192.168.0.182/api/customers").then(function (response) {
+=======
+    axios.get("http://192.168.63.189/api/customers").then(function (response) {
+>>>>>>> 23f9ab7e52be4b6c11268b86da56ef92186c0ec0
       console.log(response.data);
       setState(response.data.response.data);
     });
@@ -37,6 +41,7 @@ export default function ListUser() {
             <th>Mobile</th>
             <th>Email</th>
             <th>Address</th>
+            <th>Created Date</th>
             <th>Operations</th>
           </tr>
         </thead>
@@ -48,6 +53,7 @@ export default function ListUser() {
               <td>{user.mobileNo}</td>
               <td>{user.email}</td>
               <td>{user.address}</td>
+              <td>{user.insertedAt}</td>
               <td>
                 <button className="m-1">Delete</button>
                 <button>Edit</button>
