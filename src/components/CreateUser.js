@@ -16,7 +16,7 @@ export default function ListUser() {
     event.preventDefault();
 
     axios
-      .post("http://192.168.0.182/api/customers", inputs)
+      .post("http://192.168.184.189/api/customers", inputs)
       // .post("http://192.168.63.189/api/customers", inputs)
       .then(function (response) {
         console.log(response.data.response.data);

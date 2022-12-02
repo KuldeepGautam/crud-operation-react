@@ -9,9 +9,9 @@ export default function ListUser() {
   }, []);
 
   function getUsers() {
-    axios.get("http://192.168.0.182/api/customers").then(function (response) {
-      // axios.get("http://192.168.0.182/api/customers").then(function (response) {
-      console.log(response.data);
+    axios.get("http://192.168.184.189/api/customers").then(function (response) {
+      // axios.get("http://192.168.184.189/api/customers").then(function (response) {
+      // console.log(response.data);
       setState(response.data.response.data);
     });
   }
@@ -20,7 +20,7 @@ export default function ListUser() {
     axios
       .delete(`http://localhost:8888/api/user/${id}/delete`)
       .then(function (response) {
-        console.log(response.data);
+        // console.log(response.data);
         setState();
       });
   };
@@ -31,7 +31,7 @@ export default function ListUser() {
 
       <table width="100%" className="table table-hover">
         <thead>
-          <tr>
+          <tr className="bg-secondary text-white">
             <th>Id</th>
             <th>Name</th>
             <th>Mobile</th>
@@ -51,8 +51,8 @@ export default function ListUser() {
               <td>{user.address}</td>
               <td>{user.insertedAt}</td>
               <td>
-                <button className="m-1">Delete</button>
-                <button>Edit</button>
+                <button className="m-1 btn btn-danger btn-sm">Delete</button>
+                <button className="btn btn-primary btn-sm">Edit</button>
               </td>
             </tr>
           ))}
