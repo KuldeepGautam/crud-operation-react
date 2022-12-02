@@ -16,18 +16,20 @@ export default function ListUser() {
   }
 
   const deleteUser = (id) => {
+    console.log(id);
     axios
-      .delete(`http://localhost:8888/api/user/${id}/delete`)
+      .delete(`http://192.168.0.158/api/customers?customerId=${id}`)
       .then(function (response) {
         console.log(response.data);
-        setState();
+        alert("Deleted successfully!");
+        getUsers();
+        // setState();
       });
   };
 
   return (
     <div className="container-fluid">
-      <h1>List Users</h1>
-
+      <h1>List Customers</h1>
       <table width="100%" className="table table-hover">
         <thead>
           <tr>
@@ -50,8 +52,13 @@ export default function ListUser() {
               <td>{user.address}</td>
               <td>{user.insertedAt}</td>
               <td>
-                <button className="m-1">Delete</button>
-                <button>Edit</button>
+                <button
+                  onClick={() => deleteUser(user.customerId)}
+                  className="btn btn-danger btn-sm m-1"
+                >
+                  Delete
+                </button>
+                <button className="btn btn-sm btn-primary">Edit</button>
               </td>
             </tr>
           ))}
