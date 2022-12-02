@@ -12,17 +12,18 @@ export default function ListUser() {
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-
     axios
       .post("http://192.168.184.189/api/customers", inputs)
       // .post("http://192.168.63.189/api/customers", inputs)
       .then(function (response) {
-        console.log(response.data.response.data);
+        // console.log(response.data.response.data);
         navigate("/");
       });
   };
+
   return (
     <div className="container">
       <h1>Create user</h1>
