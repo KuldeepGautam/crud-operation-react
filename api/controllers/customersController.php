@@ -103,6 +103,8 @@ function updateCustomer($customerId, $customer)
 // delete customer
 function deleteCustomer($customerId)
 {
+
+    echo "DEBUG\r\n";
     # validating admin
     // $credentials = validateAdmin($username, $password);
     // if (!$credentials) {

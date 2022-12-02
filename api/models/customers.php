@@ -113,7 +113,7 @@ function insertUpdateCustomer($inType, $customerId, $customer, $executedBy)
             // do nothing
     }
 
-    //echo $sql;
+    echo "SQL: $sql\r\n";
     //echo $sql;
     $mysqli = dbContext();
     $result = $mysqli->query($sql);
