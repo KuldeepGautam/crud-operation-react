@@ -9,7 +9,12 @@ export default function ListUser() {
   }, []);
 
   function getUsers() {
+<<<<<<< HEAD
     axios.get("http://192.168.0.188/api/customers").then(function (response) {
+=======
+    // axios.get("http://192.168.0.158/api/customers").then(function (response) {
+    axios.get("http://192.168.184.189/api/customers").then(function (response) {
+>>>>>>> 1c2c2ebe11d56ce1492e7342560fb00f1ad2facc
       console.log(response.data);
       setState(response.data.response.data);
     });
@@ -18,7 +23,12 @@ export default function ListUser() {
   const deleteUser = (id) => {
     console.log(id);
     axios
+<<<<<<< HEAD
       .delete(`http://192.168.0.188/api/customers?customerId=${id}`)
+=======
+      // .delete(`http://192.168.0.158/api/customers?customerId=${id}`)
+      .delete(`http://192.168.184.189/api/customers?customerId=${id}`)
+>>>>>>> 1c2c2ebe11d56ce1492e7342560fb00f1ad2facc
       .then(function (response) {
         console.log(response.data);
         alert("Deleted successfully!");
@@ -32,7 +42,7 @@ export default function ListUser() {
       <h1>List Customers</h1>
       <table width="100%" className="table table-hover">
         <thead>
-          <tr>
+          <tr className="bg-secondary text-white">
             <th>Id</th>
             <th>Name</th>
             <th>Mobile</th>
@@ -58,7 +68,12 @@ export default function ListUser() {
                 >
                   Delete
                 </button>
-                <button className="btn btn-sm btn-primary">Edit</button>
+                <button
+                  to={`/user/${user.customerId}/edit`}
+                  className="btn btn-sm btn-primary"
+                >
+                  Edit
+                </button>
               </td>
             </tr>
           ))}

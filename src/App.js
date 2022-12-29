@@ -25,7 +25,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route index element={<ListUser />} />
+          <Route path="/*" element={<ListUser />} />
           <Route path="user/create" element={<CreateUser />} />
           <Route path="user/:id/edit" element={<EditUser />} />
         </Routes>
