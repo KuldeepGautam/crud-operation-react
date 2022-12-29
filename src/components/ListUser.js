@@ -61,7 +61,7 @@ export default function ListUser() {
                   Delete
                 </button>
                 <button
-                  to={`/user/${user.customerId}/edit`}
+                  to={`user/${user.customerId}/edit`}
                   className="btn btn-sm btn-primary"
                 >
                   Edit

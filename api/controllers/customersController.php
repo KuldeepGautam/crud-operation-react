@@ -143,6 +143,9 @@ function validatingCustomer($body)
         $errors[] = 'name';
     }
 
+    if (isnull($email)) {
+        $errors[] = 'email';
+    }
     if (isnull($mobileNo)) {
         $errors[] = 'mobileNo';
     }
