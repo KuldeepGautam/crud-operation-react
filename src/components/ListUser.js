@@ -9,7 +9,7 @@ export default function ListUser() {
   }, []);
 
   function getUsers() {
-    axios.get("http://192.168.0.158/api/customers").then(function (response) {
+    axios.get("http://192.168.0.188/api/customers").then(function (response) {
       console.log(response.data);
       setState(response.data.response.data);
     });
@@ -18,7 +18,7 @@ export default function ListUser() {
   const deleteUser = (id) => {
     console.log(id);
     axios
-      .delete(`http://192.168.0.158/api/customers?customerId=${id}`)
+      .delete(`http://192.168.0.188/api/customers?customerId=${id}`)
       .then(function (response) {
         console.log(response.data);
         alert("Deleted successfully!");
