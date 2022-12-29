@@ -86,7 +86,7 @@ function insertUpdateCustomer($inType, $customerId, $customer, $executedBy)
                     mobileNo = '$mobileNo',
                     email = '$email',
                     address = '$address',
-                    insertedBy = $executedBy,
+                    -- insertedBy = $executedBy,
                     insertedAt = NOW()";
             break;
         case 1:

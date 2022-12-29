@@ -45,6 +45,7 @@ function createCustomer($customer)
     $customer = (array) $customer;
     $errors = validatingCustomer($customer);
 
+
     if ($errors) {
         http_response_code(404);
         return responseHandler(5, 'createCustomer', $errors);
@@ -148,6 +149,10 @@ function validatingCustomer($body)
     }
     if (isnull($mobileNo)) {
         $errors[] = 'mobileNo';
+    }
+
+    if (isnull($email)) {
+        $errors[] = 'email';
     }
 
     if (isnull($address)) {

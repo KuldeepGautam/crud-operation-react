@@ -1,6 +1,7 @@
 <?php
 
 function dbContext()
+
 {
   // $mysql_hostname = "sisrtd.com";
   // $mysql_user = "rtdnetin_crud_db";
@@ -10,7 +11,7 @@ function dbContext()
   $mysql_hostname = "localhost";
   $mysql_user = "root";
   $mysql_password = "root123";
-  $mysql_database = "react-crud";
+  $mysql_database = "react_crud";
 
   $mysqli = new mysqli("$mysql_hostname", "$mysql_user", "$mysql_password", "$mysql_database");
   if (mysqli_connect_errno()) {
