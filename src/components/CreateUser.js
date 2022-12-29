@@ -16,11 +16,7 @@ export default function ListUser() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-<<<<<<< HEAD
-      .post("http://192.168.0.188/api/customers", inputs)
-=======
       .post("http://192.168.184.189/api/customers", inputs)
->>>>>>> 1c2c2ebe11d56ce1492e7342560fb00f1ad2facc
       // .post("http://192.168.63.189/api/customers", inputs)
       .then(function (response) {
         // console.log(response.data.response.data);
