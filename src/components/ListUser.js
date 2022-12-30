@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ListUser() {
   const [state, setState] = useState([]);
@@ -18,8 +19,7 @@ export default function ListUser() {
 
   const deleteUser = (id) => {
     console.log(id);
-    axios
-      .delete(`http://192.168.0.188/api/customers?customerId=${id}`)
+    axios.delete(`http://192.168.0.188/api/customers?customerId=${id}`)
       .then(function (response) {
         console.log(response.data);
         alert("Deleted successfully!");
@@ -35,7 +35,7 @@ export default function ListUser() {
           <h3>List Customers</h3>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12">
-          <h3 className="text-right">Add User <b>{userList}</b></h3>
+          <div style={{ textAlign: "right" }}><p className="text-right">Add User <b>{userList}</b></p></div>
         </div>
       </div>
       <table width="100%" className="table table-hover">
@@ -61,22 +61,16 @@ export default function ListUser() {
               <td>{user.insertedAt}</td>
               <td>
                 <button
-                  to={`/user/${user.customerId}/edit`}
                   className="btn btn-sm btn-success"
                 >
                   Add
                 </button>
-                <button
-<<<<<<< HEAD
+                <Link
                   to={`/user/${user.customerId}/edit`}
                   className="mx-1 btn btn-sm btn-primary"
-=======
-                  to={`user/${user.customerId}/edit`}
-                  className="btn btn-sm btn-primary"
->>>>>>> 4e7a026ce4757ae24e4f2268d5df3d5444f8c7e0
                 >
                   Edit
-                </button>
+                </Link>
                 <button
                   onClick={() => deleteUser(user.customerId)}
                   className="btn btn-danger btn-sm m-1"

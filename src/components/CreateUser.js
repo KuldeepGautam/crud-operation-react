@@ -19,6 +19,7 @@ export default function ListUser() {
       .post("http://192.168.0.188/api/customers", inputs)
       // .post("http://192.168.63.189/api/customers", inputs)
       .then(function (response) {
+        alert("Data inserted successfully!");
         // console.log(response.data.response.data);
         navigate("/");
       });
