@@ -23,7 +23,7 @@ export default function ListUser() {
       setInputs(response.data.response.data);
     });
   }
-
+  // handleChange
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
