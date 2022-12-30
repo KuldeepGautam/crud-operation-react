@@ -17,10 +17,14 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">List Users</Link>
+              <Link className="btn btn btn-primary" to="/">
+                List Users
+              </Link>
             </li>
             <li>
-              <Link to="user/create">Create User</Link>
+              <Link className="btn btn btn-primary" to="user/create">
+                Create User
+              </Link>
             </li>
           </ul>
         </nav>

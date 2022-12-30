@@ -3,18 +3,14 @@ import { useEffect, useState } from "react";
 
 export default function ListUser() {
   const [state, setState] = useState([]);
+  const [userList, setUserList] = useState("100");
 
   useEffect(() => {
     getUsers();
   }, []);
 
   function getUsers() {
-<<<<<<< HEAD
     axios.get("http://192.168.0.188/api/customers").then(function (response) {
-=======
-    // axios.get("http://192.168.0.158/api/customers").then(function (response) {
-    axios.get("http://192.168.184.189/api/customers").then(function (response) {
->>>>>>> 1c2c2ebe11d56ce1492e7342560fb00f1ad2facc
       console.log(response.data);
       setState(response.data.response.data);
     });
@@ -23,12 +19,7 @@ export default function ListUser() {
   const deleteUser = (id) => {
     console.log(id);
     axios
-<<<<<<< HEAD
       .delete(`http://192.168.0.188/api/customers?customerId=${id}`)
-=======
-      // .delete(`http://192.168.0.158/api/customers?customerId=${id}`)
-      .delete(`http://192.168.184.189/api/customers?customerId=${id}`)
->>>>>>> 1c2c2ebe11d56ce1492e7342560fb00f1ad2facc
       .then(function (response) {
         console.log(response.data);
         alert("Deleted successfully!");
@@ -39,7 +30,14 @@ export default function ListUser() {
 
   return (
     <div className="container-fluid">
-      <h1>List Customers</h1>
+      <div className="row">
+        <div className="col-lg-6 col-md-6 col-sm-12">
+          <h3>List Customers</h3>
+        </div>
+        <div className="col-lg-6 col-md-6 col-sm-12">
+          <h3 className="text-right">Add User <b>{userList}</b></h3>
+        </div>
+      </div>
       <table width="100%" className="table table-hover">
         <thead>
           <tr className="bg-secondary text-white">
@@ -63,16 +61,22 @@ export default function ListUser() {
               <td>{user.insertedAt}</td>
               <td>
                 <button
+                  to={`/user/${user.customerId}/edit`}
+                  className="btn btn-sm btn-success"
+                >
+                  Add
+                </button>
+                <button
+                  to={`/user/${user.customerId}/edit`}
+                  className="mx-1 btn btn-sm btn-primary"
+                >
+                  Edit
+                </button>
+                <button
                   onClick={() => deleteUser(user.customerId)}
                   className="btn btn-danger btn-sm m-1"
                 >
                   Delete
-                </button>
-                <button
-                  to={`/user/${user.customerId}/edit`}
-                  className="btn btn-sm btn-primary"
-                >
-                  Edit
                 </button>
               </td>
             </tr>
