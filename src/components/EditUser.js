@@ -7,7 +7,7 @@ export default function ListUser() {
 
   const [inputs, setInputs] = useState([]);
 
-  const { id } = useParams();
+  const { customerId } = useParams();
 
   useEffect(() => {
     getUser();
@@ -18,12 +18,10 @@ export default function ListUser() {
     //   console.log(response.data);
     //   setState(response.data.response.data);
     // });
-    axios
-      .get(`http://192.168.184.189/api/customers?customerId=${id}`)
-      .then(function (response) {
-        console.log(response.data);
-        setInputs(response.data.response.data);
-      });
+    axios.get("http://192.168.184.189/api/customers").then(function (response) {
+      console.log(response.data);
+      setInputs(response.data.response.data);
+    });
   }
 
   const handleChange = (event) => {
@@ -31,11 +29,11 @@ export default function ListUser() {
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-
     axios
-      .put(`http://192.168.184.189/api/customers?customerId=${id}/edit`, inputs)
+      .put(`http://192.168.184.189/api/customers${customerId}/edit`, inputs)
       .then(function (response) {
         console.log(response.data);
         navigate("/");

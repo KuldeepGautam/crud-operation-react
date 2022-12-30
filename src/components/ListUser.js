@@ -67,8 +67,13 @@ export default function ListUser() {
                   Add
                 </button>
                 <button
+<<<<<<< HEAD
                   to={`/user/${user.customerId}/edit`}
                   className="mx-1 btn btn-sm btn-primary"
+=======
+                  to={`user/${user.customerId}/edit`}
+                  className="btn btn-sm btn-primary"
+>>>>>>> 4e7a026ce4757ae24e4f2268d5df3d5444f8c7e0
                 >
                   Edit
                 </button>
