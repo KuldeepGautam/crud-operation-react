@@ -38,22 +38,24 @@ function createCustomer($customer)
 
     # validating body of the request
     if (!$customer) {
-        http_response_code(404);
+        http_response_code(400);
         return responseHandler(3, 'createCustomer', array());
     }
 
     $customer = (array) $customer;
     $errors = validatingCustomer($customer);
 
+    if (checkCustomerExistenceByEmail($customer['email']))
+        $errors[] = 'Email already exists!';
 
     if ($errors) {
-        http_response_code(404);
+        http_response_code(400);
         return responseHandler(5, 'createCustomer', $errors);
     }
 
     // create a new customer
     if (!insertUpdateCustomer(0, null, $customer, 1)) {
-        http_response_code(404);
+        http_response_code(400);
         return responseHandler(4, 'createCustomer', array());
     }
 
@@ -141,18 +143,18 @@ function validatingCustomer($body)
 
     $errors = array();
     if (isnull($name)) {
-        $errors[] = 'name';
+        $errors[] = 'name is required';
     }
 
     if (isnull($email)) {
-        $errors[] = 'email';
+        $errors[] = 'email is required';
     }
     if (isnull($mobileNo)) {
-        $errors[] = 'mobileNo';
+        $errors[] = 'mobileNo is required';
     }
 
     if (isnull($email)) {
-        $errors[] = 'email';
+        $errors[] = 'email is required';
     }
 
     if (isnull($address)) {

@@ -71,6 +71,29 @@ function selectCustomers($customerId, $pageNumber = 1, $pageSize = 100)
     );
 }
 
+function checkCustomerExistenceByEmail($email)
+{
+    $sql =
+        "SELECT COUNT(customerId)
+        FROM customers
+        WHERE isDeleted = 0
+        AND email = '$email'
+        LIMIT 1";
+
+    // echo $sql;
+    $mysqli = dbContext();
+    $result = $mysqli->query($sql);
+
+
+    if (!$result) {
+        echo ("Error checkCustomerExistanceByEmail: " . $mysqli->error);
+        return false;
+    }
+
+    $count = $result->fetch_row();
+    return intval($count[0]) > 0;
+}
+
 function insertUpdateCustomer($inType, $customerId, $customer, $executedBy)
 {
     //print_r($customer);
@@ -113,7 +136,7 @@ function insertUpdateCustomer($inType, $customerId, $customer, $executedBy)
             // do nothing
     }
 
-    echo "SQL: $sql\r\n";
+    // echo "SQL: $sql\r\n";
     //echo $sql;
     $mysqli = dbContext();
     $result = $mysqli->query($sql);

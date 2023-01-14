@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-export default function ListUser() {
+const ListUser = () => {
   const navigate = useNavigate();
 
   const [inputs, setInputs] = useState([]);
@@ -16,12 +16,20 @@ export default function ListUser() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://192.168.0.188/api/customers", inputs)
+      .post("http://192.168.0.186/api/customers", inputs)
       // .post("http://192.168.63.189/api/customers", inputs)
       .then(function (response) {
-        alert("Data inserted successfully!");
+        alert("Data submitted successfully!");
         // console.log(response.data.response.data);
         navigate("/");
+      })
+      .catch((error) => {
+        console.log("error", error, error.response);
+        if (!error.response || error.response.status === 500)
+          return alert("An unexpected error occurred!");
+
+        const message = error.response.data.response.data;
+        alert(JSON.stringify(message));
       });
   };
 
@@ -73,4 +81,6 @@ export default function ListUser() {
       </form>
     </div>
   );
-}
+};
+
+export default ListUser;

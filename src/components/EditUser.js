@@ -5,9 +5,9 @@ import { useNavigate, useParams } from "react-router-dom";
 export default function ListUser() {
   const navigate = useNavigate();
 
-  const [inputs, setInputs] = useState([]);
+  const [inputs, setInputs] = useState({});
 
-  const { Id } = useParams();
+  const { id } = useParams();
 
   useEffect(() => {
     getUser();
@@ -18,10 +18,12 @@ export default function ListUser() {
     //   console.log(response.data);
     //   setState(response.data.response.data);
     // });
-    axios.get("http://192.168.0.188/api/customers").then(function (response) {
-      console.log(response.data);
-      setInputs(response.data.response.data);
-    });
+    axios
+      .get(`http://192.168.0.186/api/customers?customerId=${id}`)
+      .then(function (response) {
+        console.log("response.data", response.data);
+        setInputs(response.data.response.data[0]);
+      });
   }
   // handleChange
   const handleChange = (event) => {
@@ -33,7 +35,7 @@ export default function ListUser() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .put(`http://192.168.0.188/api/customers${Id}/edit`, inputs)
+      .put(`http://192.168.0.186/api/customers${id}/edit`, inputs)
       .then(function (response) {
         console.log(response.data);
         navigate("/");
@@ -85,8 +87,21 @@ export default function ListUser() {
               </td>
             </tr>
             <tr>
+              <th>
+                <label>Address: </label>
+              </th>
+              <td>
+                <input
+                  value={inputs.address}
+                  type="text"
+                  name="mobile"
+                  onChange={handleChange}
+                />
+              </td>
+            </tr>
+            <tr>
               <td colSpan="2" align="right">
-                <button>Save</button>
+                <button className="btn btn-sm btn-primary">Save</button>
               </td>
             </tr>
           </tbody>
