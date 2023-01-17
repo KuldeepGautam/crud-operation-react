@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const ListUser = () => {
+const CreateCustomer = () => {
   const navigate = useNavigate();
 
   const [inputs, setInputs] = useState([]);
@@ -83,4 +83,4 @@ const ListUser = () => {
   );
 };
 
-export default ListUser;
+export default CreateCustomer;

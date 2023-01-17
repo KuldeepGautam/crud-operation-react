@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
-export default function ListUser() {
+export default function EditCustomer() {
   const navigate = useNavigate();
 
   const [inputs, setInputs] = useState({});
@@ -14,10 +14,6 @@ export default function ListUser() {
   }, []);
 
   function getUser() {
-    // axios.get("http://192.168.184.189/api/customers").then(function (response) {
-    //   console.log(response.data);
-    //   setState(response.data.response.data);
-    // });
     axios
       .get(`http://192.168.0.186/api/customers?customerId=${id}`)
       .then(function (response) {
@@ -43,7 +39,7 @@ export default function ListUser() {
   };
   return (
     <div>
-      <h1>Edit user</h1>
+      <h1 className="text-left">Edit Customer</h1>
       <form onSubmit={handleSubmit}>
         <table cellSpacing="10">
           <tbody>
@@ -79,7 +75,7 @@ export default function ListUser() {
               </th>
               <td>
                 <input
-                  value={inputs.mobile}
+                  value={inputs.mobileNo}
                   type="text"
                   name="mobile"
                   onChange={handleChange}
