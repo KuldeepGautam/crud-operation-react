@@ -57,4 +57,7 @@ switch ($urlParsed['path']) {
                 break;
         }
         break;
+
+    default:
+        echo json_encode("Not found!");
 }

@@ -15,7 +15,7 @@ export default function EditCustomer() {
 
   function getUser() {
     axios
-      .get(`http://192.168.0.186/api/customers?customerId=${id}`)
+      .get(`http://localhost:8005/api/customers?customerId=${id}`)
       .then(function (response) {
         console.log("response.data", response.data);
         setInputs(response.data.response.data[0]);
@@ -31,7 +31,7 @@ export default function EditCustomer() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .put(`http://192.168.0.186/api/customers${id}/edit`, inputs)
+      .put(`http://localhost:8005/api/customers${id}/edit`, inputs)
       .then(function (response) {
         console.log(response.data);
         navigate("/");

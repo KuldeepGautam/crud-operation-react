@@ -16,7 +16,7 @@ const CreateCustomer = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://192.168.0.186/api/customers", inputs)
+      .post("http://localhost:8005/api/customers", inputs)
       // .post("http://192.168.63.189/api/customers", inputs)
       .then(function (response) {
         alert("Data submitted successfully!");

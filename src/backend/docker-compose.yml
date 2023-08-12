@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  crud_operation_web:
+    build: ./
+    command: /app/docker-entrypoint.sh
+    ports:
+      - 8005:80
+      - 3305:3306
+    volumes:
+      - ./:/var/www/html
+      - crud_operation_db:/var/lib/mysql
+
+volumes:
+  crud_operation_db:

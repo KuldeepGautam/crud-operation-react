@@ -9,9 +9,9 @@ function dbContext()
   // $mysql_password = "rtdnetin_crud_db";
   // $mysql_database = "rtdnetin_crud_db";
 
-  $mysql_hostname = "localhost";
-  $mysql_user = "root";
-  $mysql_password = "root123";
+  $mysql_hostname = "127.0.0.1";
+  $mysql_user = "admin";
+  $mysql_password = "admin123";
   $mysql_database = "react_crud";
 
   $mysqli = new mysqli("$mysql_hostname", "$mysql_user", "$mysql_password", "$mysql_database");
