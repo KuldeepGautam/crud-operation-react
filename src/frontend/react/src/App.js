@@ -7,34 +7,33 @@ import EditCustomer from "./components/EditCustomer";
 
 function App() {
   return (
-    <div className="container text-center App">
+    <div className="container App">
       <br />
-      <h2 className="text-center">React CRUD operations</h2>
+      <h2 className="text-center">
+        Unlimited <span className="text-danger">movies</span>, TV shows and more
+      </h2>
       <BrowserRouter>
-        <nav>
-          <ul>
-            <li>
-              <Link className="btn btn btn-primary" to="/">
-                Customer List
-              </Link>
-            </li>
-            <li>
-              <Link className="btn btn btn-primary" to="customer/create">
-                Create New Customer
-              </Link>
-            </li>
-            <li>
-              <Link className="btn btn btn-primary" to="user/create">
-                Registration
-              </Link>
-            </li>
-            <li>
-              <Link className="btn btn btn-primary" to="user/create">
-                Login
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <div class="text-center">
+          <nav>
+            <ul>
+              <li>
+                <Link className="btn btn btn-warning" to="/">
+                  Movies List
+                </Link>
+              </li>
+              <li>
+                <Link className="btn btn btn-primary" to="customer/create">
+                  Create New Movies
+                </Link>
+              </li>
+              <li>
+                <Link className="btn btn btn-danger" to="user/create">
+                  Login
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <Routes>
           <Route path="/*" element={<CustomerList />} />
           <Route path="customer/create" element={<CreateCustomer />} />

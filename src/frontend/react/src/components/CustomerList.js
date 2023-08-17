@@ -1,17 +1,19 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import config from "../config";
 
 export default function CustomerList() {
   const [state, setState] = useState([]);
   const [userList, setUserList] = useState("100");
+  const apiUrl = config.apiUrl;
 
   useEffect(() => {
     getUsers();
   }, []);
 
   function getUsers() {
-    axios.get("http://localhost:8005/api/customers").then(function (response) {
+    axios.get(apiUrl).then(function (response) {
       console.log(response.data);
       setState(response.data.response.data);
     });
@@ -19,21 +21,19 @@ export default function CustomerList() {
 
   const deleteUser = (id) => {
     console.log(id);
-    axios
-      .delete(`http://localhost:8005/api/customers?customerId=${id}`)
-      .then(function (response) {
-        console.log(response.data);
-        alert("Deleted successfully!");
-        getUsers();
-        // setState();
-      });
+    axios.delete(apiUrl + `?customerId=${id}`).then(function (response) {
+      console.log(response.data);
+      alert("Deleted successfully!");
+      getUsers();
+      // setState();
+    });
   };
 
   return (
     <div className="container-fluid">
       <div className="row">
         <div className="col-lg-6 col-md-6 col-sm-12">
-          <h3>List Customers</h3>
+          <h3>List Customers {state.length}</h3>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12">
           <div style={{ textAlign: "right" }}>

@@ -1,10 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import config from "../config";
 
 const CreateCustomer = () => {
   const navigate = useNavigate();
-
+  const apiUrl = config.apiUrl;
   const [inputs, setInputs] = useState([]);
 
   const handleChange = (event) => {
@@ -16,12 +17,12 @@ const CreateCustomer = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:8005/api/customers", inputs)
+      .post(apiUrl, inputs)
       // .post("http://192.168.63.189/api/customers", inputs)
       .then(function (response) {
-        alert("Data submitted successfully!");
         // console.log(response.data.response.data);
         navigate("/");
+        alert("Data submitted successfully!");
       })
       .catch((error) => {
         console.log("error", error, error.response);

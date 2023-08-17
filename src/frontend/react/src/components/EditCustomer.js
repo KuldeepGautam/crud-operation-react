@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
+import config from "../config";
 
 export default function EditCustomer() {
   const navigate = useNavigate();
-
+  const apiUrl = config.apiUrl;
   const [inputs, setInputs] = useState({});
 
   const { id } = useParams();
@@ -14,13 +15,12 @@ export default function EditCustomer() {
   }, []);
 
   function getUser() {
-    axios
-      .get(`http://localhost:8005/api/customers?customerId=${id}`)
-      .then(function (response) {
-        console.log("response.data", response.data);
-        setInputs(response.data.response.data[0]);
-      });
+    axios.get(apiUrl + `?customerId=${id}`).then(function (response) {
+      console.log("response.data", response.data);
+      setInputs(response.data.response.data[0]);
+    });
   }
+
   // handleChange
   const handleChange = (event) => {
     const name = event.target.name;
@@ -30,13 +30,13 @@ export default function EditCustomer() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios
-      .put(`http://localhost:8005/api/customers${id}/edit`, inputs)
-      .then(function (response) {
-        console.log(response.data);
-        navigate("/");
-      });
+    axios.put(apiUrl + `?customerId=${id}`, inputs).then(function (response) {
+      console.log(response.data);
+      alert("Data updated successfully....!!");
+      navigate("/");
+    });
   };
+
   return (
     <div>
       <h1 className="text-left">Edit Customer</h1>
