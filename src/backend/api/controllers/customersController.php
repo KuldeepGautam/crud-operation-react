@@ -45,8 +45,11 @@ function createCustomer($customer)
     $customer = (array) $customer;
     $errors = validatingCustomer($customer);
 
-    if (checkCustomerExistenceByEmail($customer['email']))
-        $errors[] = 'Email already exists!';
+    if (checkCustomerExistenceByEmail($customer['name']))
+        $errors[] = 'This movies name already exist!';
+
+    // if (checkCustomerExistenceByEmail($customer['email']))
+    //     $errors[] = 'Email already exists!';
 
     if ($errors) {
         http_response_code(400);
